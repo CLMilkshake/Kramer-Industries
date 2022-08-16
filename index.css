@@ -1,7 +1,190 @@
 body {
-    background-color: lime;
+    background:url(background.png) ;
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-body a {
+#Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: royalblue;
+    margin: -10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.middle h1 /*Title on the header*/ {
+    color: lime;
     text-decoration: none;
-    color: blue;
+    font-family: sans-serif;
+    margin-left: 93px;
+}
+.middle img {
+    margin-left: -25px;
+}
+.middle {
+    margin-top: 30px;
+}
+.logo {
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.left {
+    margin-left: 150px;
+}
+.right {
+    margin-right: 50px;
+}
+.about{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: gold;
+}
+.logo{
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+}
+.link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.link a {
+    color: #cea135;
+    text-decoration: none;
+}
+.button {
+    width: 70px;
+    margin-right: 200px;
+}
+.button button {
+    background-color: gold;
+    border: none;
+}
+.button a {
+    text-decoration: none;
+    color: royalblue;
+    font-size: 1.25em;
+}
+#mid-page {
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    width: 200px;
+}
+.discord {
+    margin-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("background.png");
+  
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bottom-page {
+    background-color: royalblue;
+    height: 225px;
+    width: 1700px;
+    margin-left: -8px;
+    margin-top: 50px;
+}
+#lowerpage {
+    height: 500px;
+    background-color: black;
+    width: 1700px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-lower {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px
+}
+.icon {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.exp {
+    margin-top: 200px;
+}
+.exp a {
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(116, 227, 241);
+}
+.exp1 a {
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(116, 227, 241);
+}
+.exp2 a {
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(116, 227, 241);
+}
+.exp1 img{
+    width: 100px;
+    margin-left: 193px;
+    margin-bottom: 10px;
+}
+.exp2 img{
+    width: 100px;
+    margin-left: 210px;
+}
+.things {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.exp img {
+    width: 100px;
+    margin-left: 71px;
+}
+.exp p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.exp h3 {
+    margin-left: 66px;
+}
+.exp1 h3 {
+    margin-left: 170px;
+}
+.exp2 h3 {
+    margin-left: 205px;
 }
