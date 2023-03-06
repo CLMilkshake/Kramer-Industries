@@ -116,9 +116,20 @@
 	    var user = localStorage.getItem('user');
         console.log(user)
         document.getElementById("Username").innerHTML = user;
+        var lButton = document.getElementById("Login");
+        var aButton = document.getElementById("Account");
+        var signedIn = document.getElementById("signedIn");
+        if(user != " ")
+        {
+            aButton.style.display = "flex"
+            lButton.style.display = "none"
+        }
+        else
+        {
+            lButton.style.display = "flex"
+            aButton.style.display = "none"
+        }
     }
-
 </script>
-<script src="login.js"></script>
 </body>
 </html>
