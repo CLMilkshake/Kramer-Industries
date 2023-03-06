@@ -115,6 +115,7 @@
     function onStart() {
 	    var user = localStorage.getItem('user');
         console.log(user)
+        document.getElementById("Username").innerHTML = user;
         var lButton = document.getElementById("Login");
         var aButton = document.getElementById("Account");
         var signedIn = document.getElementById("signedIn");
