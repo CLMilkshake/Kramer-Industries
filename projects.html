@@ -21,7 +21,7 @@
    crossorigin="anonymous"
     />
 </head>
-<body>
+<body onload="onStart()">
     <!-- Container element -->
     <div id="Header">
         <div class="left">
@@ -49,19 +49,36 @@
             </div>
         </div>
     </div>
-        <div class="right">
-            <div class="button">
-                <button style="width: 170px; height: 30px;"><a href=""><b>Support Us</b></a></button>
-        </div>
+    <div class="right">
+        <div class="button" id="Login" style="display: flex;">
+            <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="login.html"><b>Login</b></a></button>
+            </div>
+            <div class="button" id="Account" style="display: none;">
+                <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="account.html"><b>Account: <span id="Username" style="color: white";></span></b></a></button>
+                </div>
+    </div>
         </div>
 </div>
-<div id="mid-page">
+<div id="mid-page" style="height: 1500px;">
     <div class="left">
     </div>
-    <div class="middle">
+    <div class="middle" id="Denied" style="display: flex; flex-direction: column;">
         <h1 style="color: red;">Sorry, you don't have access to this page.</h1>
         <h3 style="color: orange;">As of August 12, 2084, you need Level 6 clearance to access this page</h3>
         <h3 style="color: orange;">If you think this is an error, please contact us</h3>
+    </div>
+    <div class="middle" id="Allowed" style="display: none; flex-direction: column; align-items: center; background: linear-gradient(rgba(0, 0, 0, 0.00001), rgba(0, 0, 0, 0.9)), url(lol.png); background-size: cover; width: 5000px; padding-top: 100px; margin-top: -100px; padding-bottom: 100px;">
+        <h1 style="color: rgb(0, 0, 0); margin-left: 50px;">Kramer PC</h1>
+        <h4 style="color: orange; width: 500px;">Created in July of 2072, this was one of Kramer Industries first projects to succeed. It was the first of a new generation of computers, running off of Mr Kramer's own OS system he made when he was 16.</h4>
+        <h1 style="color: rgb(0, 0, 0); margin-left: 50px; padding-top: 100px;">KVR Headset</h1>
+        <h4 style="color: orange; width: 500px;">Created in July of 2075, this headset was the next generation of VR headsets, it made you feel like you were actually in the game. It could run independently, or off of the Kramer OS.</h4>
+        <h1 style="color: rgb(0, 0, 0); margin-left: 50px; padding-top: 100px;">Kramer Cookies</h1>
+        <h4 style="color: orange; width: 500px;">Created in July of 2078, these cookies boosted how you felt. It tapped into your brain to release "happy thoughts". It was the first food product that Kramer Industries created.</h4>
+        <h1 style="color: rgb(0, 0, 0); margin-left: 50px; padding-top: 100px;">Kramer Mind Reader</h1>
+        <h4 style="color: orange; width: 500px;">Created in July of 2080, this computer upgrade had the ability to look inside your mind while you were wearing a special helmet, and it would replay memories as a video.</h4>
+        <h1 style="color: rgb(0, 0, 0); margin-left: 50px; padding-top: 100px;">Operation Intus</h1>
+        <h4 style="color: orange; width: 500px;">Started in July of 2083, Kramer Industries tried to... </h4> <h2 style="color: red; margin-top: -25px;"><b>I'm sorry, you must have Level 3 clearance to continue reading</b></h2>
+    </div>
     </div>
     <div class="right">
     </div>
@@ -104,5 +121,31 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function onStart() {
+	    var user = localStorage.getItem('user');
+        console.log(user)
+        document.getElementById("Username").innerHTML = user;
+        var denied = document.getElementById("Denied");
+        var allowed = document.getElementById("Allowed");
+        var lButton = document.getElementById("Login");
+        var aButton = document.getElementById("Account");
+        var signedIn = document.getElementById("signedIn");
+        if(user != " ")
+        {
+            allowed.style.display = "flex"
+            denied.style.display = "none"
+            aButton.style.display = "flex"
+            lButton.style.display = "none"
+        }
+        else
+        {
+            denied.style.display = "flex"
+            allowed.style.display = "none"
+            lButton.style.display = "flex"
+            aButton.style.display = "none"
+        }
+    }
+</script>
 </body>
 </html>

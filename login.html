@@ -21,7 +21,7 @@
    crossorigin="anonymous"
     />
 </head>
-<body>
+<body onload="onStart()">
     <!-- Container element -->
     <div id="Header">
         <div class="left">
@@ -49,14 +49,14 @@
             </div>
         </div>
     </div>
-        <div class="right">
-            <div class="button" id="Login">
-                <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="login.html"><b>Login</b></a></button>
+    <div class="right">
+        <div class="button" id="Login" style="display: flex;">
+            <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="login.html"><b>Login</b></a></button>
+            </div>
+            <div class="button" id="Account" style="display: none;">
+                <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="account.html"><b>Account: <span id="Username" style="color: white";></span></b></a></button>
                 </div>
-                <div class="button" id="Account" style="display: none;">
-                    <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="account.html"><b>Account</b></a></button>
-                    </div>
-        </div>
+    </div>
         </div>
 </div>
 <div id="mid-page">
