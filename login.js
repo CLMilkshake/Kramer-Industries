@@ -30,8 +30,6 @@ function getInfo() {
 	console.log("incorrect username or password")
 	var element = document.getElementById("incorrectPassword");
 	element.style.opacity = "1";
-    " " = username;
-    localStorage.setItem("user", username);
 }
 
 function createAccount()
