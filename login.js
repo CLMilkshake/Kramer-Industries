@@ -28,6 +28,8 @@ function getInfo() {
 		}
 	}
 	console.log("incorrect username or password")
+	console.log(username);
+	console.log(password);
 	var element = document.getElementById("incorrectPassword");
 	element.style.opacity = "1";
 }
