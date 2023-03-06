@@ -23,7 +23,7 @@ function getInfo() {
 			localStorage.setItem("signedIn", signedIn);
 			localStorage.setItem("user", username);
 			// stop the function if this is found to be true
-			window.location = "https://clmilkshake.github.io/Kramer-Industries/"
+			window.location = "https://clmilkshake.github.io/Kramer-Industries/index.html"
 			return
 		}
 	}
