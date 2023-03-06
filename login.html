@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <!--The name on the Tab-->
-    <title>Kramer Industries</title>
+    <title>Login</title>
     <!--The Icon on the Tab-->
     <link rel="icon" type="image/png" href="KI.PNG">
     <link
@@ -51,23 +51,24 @@
     </div>
         <div class="right">
             <div class="button">
-            <button style="width: 170px; height: 30px;"><a href="login.html"><b><p><span id="Username"></span>Login</p></b></a></button>
+            <button style="width: 170px; height: 30px;"><a href=""><b>Login</b></a></button>
         </div>
         </div>
 </div>
 <div id="mid-page">
-    <div class="left">
-        
+    <div class="incorrectPassword">
+        <h2 style="color: red; display: flex; align-items: center; justify-content: center; padding-top: 80px; margin-bottom: -30px; opacity: 0;" id="incorrectPassword">Incorrect Username or Password</h2>
     </div>
-    <div class="middle">
-        <h1>Constantly Creating</h1>
-        <h4>We are constantly finding new ways to improve our world</h4>
-        <h1>Bettering Society</h1>
-        <h3>We are creating ways to help people</h3>
-        <h1>Responsive</h1>
-        <h4>Feel free to contact us with any questions you have.</h4>
-    </div>
-    <div class="right">
+    <div class="login">
+        <form>
+            <div class="loginTotal" style="display: true;" id="loginTotal">
+                <div class="login">
+                    <input type="text" id="Username" placeholder="Username" style="width: 400px; height: 50px; font-size: 30px;">
+                    <input type="password" id="Password" placeholder="Password" style="width: 400px; height: 50px; font-size: 30px;">
+                </div>
+                <button type="button" onclick="getInfo()" style="width: 400px; height: 50px; font-size: 30px; margin-left: 200px; margin-top: 20px; background-color: rgb(51, 51, 51); color: white;">Login</button>
+            </div>
+            </form>
     </div>
     </div>
     <div id="bottom-page">
