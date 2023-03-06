@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="right">
-        <div class="button" id="Login">
+        <div class="button" id="Login" style="display: flex;">
             <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="login.html"><b>Login</b></a></button>
             </div>
             <div class="button" id="Account" style="display: none;">
@@ -116,7 +116,6 @@
 	    var user = localStorage.getItem('user');
         console.log(user)
         document.getElementById("Username").innerHTML = user;
-        console.log(user + " is logged in!!!");
         var lButton = document.getElementById("Login");
         var aButton = document.getElementById("Account");
         var signedIn = document.getElementById("signedIn");
