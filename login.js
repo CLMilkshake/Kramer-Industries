@@ -4,8 +4,8 @@
 // Loop through Array of Objects
 var objPeople = [
 	{ 
-		username: "KramerAdmin",
-		password: "PrepareFuture"
+		username: "Kramer Admin",
+		password: "TheFutureIsNow21"
 	}
 
 ]
