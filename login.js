@@ -11,7 +11,7 @@ var objPeople = [
 ]
 
 function getInfo() {
-	var 2 = document.getElementById("Username").value
+	var username2 = document.getElementById("Username").value
 	var password = document.getElementById('Password').value
 
 	for(var i = 0; i < objPeople.length; i++) {
