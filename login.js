@@ -31,6 +31,7 @@ function getInfo() {
 	console.log("incorrect username or password")
 	console.log(username);
 	console.log(password);
+	console.log(document.getElementById('Username').value);
 	var element = document.getElementById("incorrectPassword");
 	element.style.opacity = "1";
 }
