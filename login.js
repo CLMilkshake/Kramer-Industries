@@ -11,24 +11,24 @@ var objPeople = [
 ]
 
 function getInfo() {
-	var username2 = document.getElementById("Username").value
+	var username = document.getElementById("Username").value
 	var password = document.getElementById('Password').value
 
 	for(var i = 0; i < objPeople.length; i++) {
 		// check is user input matches username and password of a current index of the objPeople array
-		if(username2 == objPeople[i].username2 && password == objPeople[i].password) {
-			console.log(username2 + " is logged in!!!");
-            document.getElementById("Username").innerHTML = username2;
+		if(username == objPeople[i].username && password == objPeople[i].password) {
+			console.log(username + " is logged in!!!");
+            document.getElementById("Username").innerHTML = username;
 			var signedIn = true
 			localStorage.setItem("signedIn", signedIn);
-			localStorage.setItem("user", username2);
+			localStorage.setItem("user", username);
 			// stop the function if this is found to be true
 			window.location = "https://clmilkshake.github.io/Kramer-Industries/index.html"
 			return
 		}
 	}
 	console.log("incorrect username or password")
-	console.log(username2);
+	console.log(username);
 	console.log(password);
 	console.log(document.getElementById("Username").value);
 	var element = document.getElementById("incorrectPassword");
