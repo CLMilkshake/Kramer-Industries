@@ -11,8 +11,8 @@ var objPeople = [
 ]
 
 function getInfo() {
-	var username = document.getElementById("Username").value
-	var password = document.getElementById('Password').value
+	var username = document.getElementById("Username").value;
+	var password = document.getElementById('Password').value;
 
 	for(var i = 0; i < objPeople.length; i++) {
 		// check is user input matches username and password of a current index of the objPeople array
