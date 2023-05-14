@@ -125,16 +125,18 @@
     function onStart() {
 	    var user = localStorage.getItem('userKramer');
         console.log(user)
-        document.getElementById("Username").innerHTML = user;
+        //document.getElementById("Username").innerHTML = user;
         var denied = document.getElementById("Denied");
         var allowed = document.getElementById("Allowed");
+        var midpage = document.getElementById("mid-page");
         var lButton = document.getElementById("Login");
         var aButton = document.getElementById("Account");
         var signedIn = document.getElementById("signedIn");
-        if(user != " ")
+        if(user == "Kramer Admin")
         {
             allowed.style.display = "flex"
             denied.style.display = "none"
+            midpage.style.height = "1500px"
             aButton.style.display = "flex"
             lButton.style.display = "none"
         }
@@ -142,6 +144,7 @@
         {
             denied.style.display = "flex"
             allowed.style.display = "none"
+            midpage.style.height = "250px"
             lButton.style.display = "flex"
             aButton.style.display = "none"
         }
