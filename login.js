@@ -25,6 +25,10 @@ function getInfo() {
 			window.location = "https://clmilkshake.github.io/Kramer-Industries/index.html"
 			return
 		}
+		if(username == "ABC123" && password == "ABC123") {
+			var element1 = document.getElementById("thanksBook");
+			element1.style.opacity = "1";
+		}
 	}
 	console.log("incorrect username or password")
 	console.log(username);
