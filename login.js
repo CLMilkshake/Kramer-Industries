@@ -20,7 +20,7 @@ function getInfo() {
 			console.log(username + " is logged in!!!");
 			var signedIn = true
 			localStorage.setItem("signedIn", signedIn);
-			localStorage.setItem("user", username);
+			localStorage.setItem("userKramer", username);
 			// stop the function if this is found to be true
 			window.location = "https://clmilkshake.github.io/Kramer-Industries/index.html"
 			return
@@ -45,7 +45,7 @@ function createAccount()
 			
             document.getElementById("Username").innerHTML = username;
 			var signedIn = true
-			localStorage.setItem("user", username);
+			localStorage.setItem("userKramer", username);
 			// stop the function if this is found to be true
 			window.location = "https://clmilkshake.github.io/Labcraft/index.html"
 			return
