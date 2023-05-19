@@ -131,10 +131,10 @@
     function signOut()
     {
 			var signedIn = false
-			localStorage.setItem("signedIn", "false");
+			localStorage.setItem("signedIn", signedIn);
 			localStorage.setItem("userKramer", " ");
-            window.location = "https://clmilkshake.github.io/Kramer-Industries/index.html"
             document.getElementById("Username").innerHTML = localStorage.getItem("userKramer");
+            window.location = "https://clmilkshake.github.io/Kramer-Industries/index.html"
     }
 </script>
 </body>
