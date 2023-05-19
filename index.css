@@ -18,6 +18,7 @@ body {
     top: 0px;
     right: 0px;
     left: 0px;
+    padding-right: 35px;
 }
 .middle h1 /*Title on the header*/ {
     color: rgb(0, 0, 0);
@@ -39,19 +40,28 @@ body {
     font-size: 20px;
     width: 1000px;
 }
+.middle h2 {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    font-size: 40px;
+    width: 99%;
+    margin-left: 6px;
+    margin-top: 0px;
+}
 .middle img {
     margin-left: 80px;
 }
 .middle {
     margin-top: 30px;
-    margin-right: 50px;
+    margin-left: 15px;
 }
 .logo {
-    margin-left: 200px;
+    /*margin-left: 200px;*/
     margin-bottom: 20px;
 }
 .left {
-    margin-left: 150px;
+    padding-left: 170px;
 }
 .right {
     margin-right: 50px;
@@ -63,7 +73,7 @@ body {
     color: rgb(100, 100, 100);
 }
 .logo{
-    margin-left: 10px;
+    margin-left: -70px;
     margin-top: -20px;
 }
 .nav {
@@ -71,7 +81,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: -15px;
+    margin-left: -100px;
+}
+.bottomNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
 }
 .link {
     margin-left: 20px;
@@ -152,7 +169,7 @@ body {
 }
 .logo-lower {
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 .exp {
     margin-top: 200px;
