@@ -19,6 +19,8 @@ body {
     right: 0px;
     left: 0px;
     padding-right: 35px;
+    width: 100%;
+    height: 19%;
 }
 .middle h1 /*Title on the header*/ {
     color: rgb(0, 0, 0);
