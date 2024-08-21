@@ -1,136 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-    <!--K****: Are you sure you want to do this? I don't know if you see w--->
-    
-    <!--R******: I am sure. Now go prepare the workers. I want this done before the end of the year.-->
 
-    <!--K****: (*sigh*) Ok. I will start preparing-->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <!--The name on the Tab-->
     <title>Kramer Industries</title>
-    <!--The Icon on the Tab-->
-    <link rel="icon" type="image/png" href="KI.PNG">
-    <link
-   rel="stylesheet"
-   href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-   integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-   crossorigin="anonymous"
-    />
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body onload="onStart()">
-    <!-- Container element -->
-    <div id="Header">
-        <div class="left">
-            <div class="about">
-            <p>Kramer Industries | Preparing the Future</p>
-        </div>
-        </div>
-        <div class="middle">
-            <!--This is the Image-->
-            <div class="logo">
-            <img src="KI.PNG" alt="Homepage Image" style="height: 110px;">
-        </div>
-        <div class="nav">
-            <div class="link">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="link">
-                <a href="about.html">About</a>
-            </div>
-            <div class="link">
-                <a href="download.html">Download</a>
-            </div>
-            <div class="link">
-                <a href="projects.html">Projects</a>
-            </div>
-        </div>
-    </div>
-    <div class="right">
-        <div class="button" id="Login" style="display: flex;">
-            <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="login.html"><b>Login</b></a></button>
-            </div>
-            <div class="button" id="Account" style="display: none;">
-                <button style="width: 170px; height: 30px; margin-left: -100px;"><a href="account.html"><b>Account: <span id="Username" style="color: white";></span></b></a></button>
-                </div>
-    </div>
-</div>
-<div id="mid-page">
-    <div class="left">
-        
-    </div>
-    <div class="middle">
-        <h1>Constantly Creating</h1>
-        <h4>Since 2071, we are constantly finding new ways to improve your life, whether that be from better computers, to better cookies.</h4>
-        <h1>Trusted Since 2071</h1>
-        <h3>Since we've been founded, we haven't had one bad review.</h3>
-        <h3 style="margin-top: -19px;">It just goes to show how much you will love your Kramer Product.</h3>
-        <h1>You are our first priority</h1>
-        <h4 >We put you, and your safety first. Our 13 point safety check shows how much we want your trust.</h4>
-    </div>
-    <div class="right">
-    </div>
-    </div>
-    <div id="bottom-page">
-        <div class="left-bottom">
+<body>
+    <header>
+        <img src="images/KI.png" style="width: 80px; margin-bottom: -10px;">
+        <h1>Kramer Industries</h1>
+        <hr>
+    </header>
 
-        </div>
-        <div class="middle-bottom">
+    <nav>
+        <a href="#">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="mailto: kramerindustries15@gmail.com">Contact</a>
+    </nav>
 
-        </div>
-        <div class="right-bottom">
-
-        </div>
-    </div>
-    <div id="lowerpage" style="margin-top: 70px;">
-        <div class="left-lower">
-            <div class="logo-lower">
-            <img src="KI.PNG" alt="Logo">
-        </div>
-        </div>
-        <div id="middle-lower">
-            <div class="bottomNav">
-                <div class="link">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="link">
-                    <a href="about.html">About</a>
-                </div>
-                <div class="link">
-                    <a href="download.html">Download</a>
-                </div>
-                <div class="link">
-                    <a href="projects.html">Projects</a>
-                </div>
+    <div class="content">
+        <h1>Preparing the Future</h1>
+        <hr>
+        <div class="grid-container" style="grid-template-columns: repeat(auto-fill, minmax(200px, 33%)); gap:150px;">
+            <div class="grid-item" id="grid-item-hover">
+                <a href="news.html">
+                    <h2 style="text-decoration: underline; font-size:250%">Buy Kramer Cookies!</h2>
+                    <h2 style="font-size: 17px;">Because even tech nerds need to eat sometimes!</h2>
+                    <img src="images/KramerCookies.jpg" alt="Image 1">
+                    <!-- <video autoplay="true" id="videoElement"></video> -->
+                </a>
             </div>
-        </div>
-        <div class="right-lower">
+            <div class="grid-item" id="grid-item-hover">
+                <a href="apply.html">
+                    <h2 style="text-decoration: underline; font-size:250%">Apply Here!</h2>
+                    <h2 style="font-size: 17px;">We have openings!</h2>
+                    <img src="images/jobapp.jpg" alt="Job Application Image">
+                    <!-- <video autoplay="true" id="videoElement"></video> -->
+                </a>
+            </div>
             
         </div>
     </div>
-</div>
-<script type="text/javascript">
-    function onStart() {
-	    var user = localStorage.getItem('userKramer');
-        console.log(user)
-        document.getElementById("Username").innerHTML = user;
-        var lButton = document.getElementById("Login");
-        var aButton = document.getElementById("Account");
-        var signedIn = document.getElementById("signedIn");
-        if(user != " ")
-        {
-            aButton.style.display = "flex"
-            lButton.style.display = "none"
-        }
-        else
-        {
-            lButton.style.display = "flex"
-            aButton.style.display = "none"
-        }
-    }
-</script>
+
+    <footer>
+        <p>&copy; 2024 CLMilkshake</p>
+    </footer>
+
+
 </body>
 </html>

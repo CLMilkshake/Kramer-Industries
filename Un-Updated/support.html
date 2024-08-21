@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <!--The name on the Tab-->
-    <title>Login</title>
+    <title>Support</title>
     <!--The Icon on the Tab-->
     <link rel="icon" type="image/png" href="KI.PNG">
     <link
@@ -16,8 +16,7 @@
    crossorigin="anonymous"
     />
 </head>
-<body>
-    <script src="login.js"></script>
+<body onload="onStart()">
     <!-- Container element -->
     <div id="Header">
         <div class="left">
@@ -54,22 +53,15 @@
                 </div>
     </div>
 </div>
-</div>
-<div id="mid-page">
-    <div class="incorrectPassword">
-        <h2 style="color: red; display: flex; align-items: center; justify-content: center; padding-top: 80px; margin-bottom: -30px; opacity: 0;" id="incorrectPassword">Incorrect Username or Password</h2>
-        <h2 style="color: #cea135; display: flex; align-items: center; justify-content: center; padding-top: 10px; margin-bottom: -30px; opacity: 0;" id="thanksBook">Thanks for reading the book, but nothing here yet!</h2>
+<div id="mid-page" style="margin-left: 40px;">
+    <div class="left">
+        
     </div>
-    <div class="login">
-        <form>
-            <div class="loginTotal" style="display: true;" id="loginTotal">
-                <div class="login">
-                    <input type="text" id="Username" placeholder="Username" style="width: 400px; height: 50px; font-size: 30px;">
-                    <input type="Password" id="Password" placeholder="Password" style="width: 400px; height: 50px; font-size: 30px;">
-                </div>
-                <button type="button" onclick="getInfo()" style="width: 400px; height: 50px; font-size: 30px; margin-left: 200px; margin-top: 20px; background-color: rgb(51, 51, 51); color: white;">Login</button>
-            </div>
-            </form>
+    <div class="middle" style="display:flex; flex-direction: column; align-items: center;">
+        <h1>Need Help?</h1>
+        <h2 style="margin-top: -20px; margin-left: -10px; color:#cea135;">We've got your back</h2>
+    </div>
+    <div class="right">
     </div>
     </div>
     <div id="bottom-page">
@@ -83,7 +75,7 @@
 
         </div>
     </div>
-    <div id="lowerpage">
+    <div id="lowerpage" style="margin-top: 100px;">
         <div class="left-lower">
             <div class="logo-lower">
             <img src="KI.PNG" alt="Logo">
@@ -98,7 +90,7 @@
                     <a href="about.html">About</a>
                 </div>
                 <div class="link">
-                    <a href="download.html">Download</a>
+                    <a href="apply.html">Jobs</a>
                 </div>
                 <div class="link">
                     <a href="projects.html">Projects</a>
@@ -110,7 +102,25 @@
         </div>
     </div>
 </div>
-
-<script src="login.js"></script>
+<script type="text/javascript">
+    function onStart() {
+	    var user = localStorage.getItem('userKramer');
+        console.log(user)
+        document.getElementById("Username").innerHTML = user;
+        var lButton = document.getElementById("Login");
+        var aButton = document.getElementById("Account");
+        var signedIn = document.getElementById("signedIn");
+        if(user != " ")
+        {
+            aButton.style.display = "flex"
+            lButton.style.display = "none"
+        }
+        else
+        {
+            lButton.style.display = "flex"
+            aButton.style.display = "none"
+        }
+    }
+</script>
 </body>
 </html>

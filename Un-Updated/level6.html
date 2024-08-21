@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <!--The name on the Tab-->
-    <title>Support</title>
+    <title>Kramer Industries</title>
     <!--The Icon on the Tab-->
     <link rel="icon" type="image/png" href="KI.PNG">
     <link
@@ -37,7 +37,7 @@
                 <a href="about.html">About</a>
             </div>
             <div class="link">
-                <a href="download.html">Download</a>
+                <a href="apply.html">Jobs</a>
             </div>
             <div class="link">
                 <a href="projects.html">Projects</a>
@@ -53,13 +53,12 @@
                 </div>
     </div>
 </div>
-<div id="mid-page" style="margin-left: 40px;">
+<div id="mid-page">
     <div class="left">
         
     </div>
-    <div class="middle" style="display:flex; flex-direction: column; align-items: center;">
-        <h1>Need Help?</h1>
-        <h2 style="margin-top: -20px; margin-left: -10px; color:#cea135;">We've got your back</h2>
+    <div class="middle">
+        
     </div>
     <div class="right">
     </div>
@@ -75,7 +74,7 @@
 
         </div>
     </div>
-    <div id="lowerpage" style="margin-top: 100px;">
+    <div id="lowerpage">
         <div class="left-lower">
             <div class="logo-lower">
             <img src="KI.PNG" alt="Logo">
@@ -93,7 +92,7 @@
                     <a href="download.html">Download</a>
                 </div>
                 <div class="link">
-                    <a href="projects.html">Projects</a>
+                    <a href="">Games</a>
                 </div>
             </div>
         </div>
@@ -107,18 +106,18 @@
 	    var user = localStorage.getItem('userKramer');
         console.log(user)
         document.getElementById("Username").innerHTML = user;
-        var lButton = document.getElementById("Login");
-        var aButton = document.getElementById("Account");
+        var denied = document.getElementById("Denied");
+        var allowed = document.getElementById("Allowed");
         var signedIn = document.getElementById("signedIn");
         if(user != " ")
         {
-            aButton.style.display = "flex"
-            lButton.style.display = "none"
+            allowed.style.display = "flex"
+            denied.style.display = "none"
         }
         else
         {
-            lButton.style.display = "flex"
-            aButton.style.display = "none"
+            denied.style.display = "flex"
+            allowed.style.display = "none"
         }
     }
 </script>
