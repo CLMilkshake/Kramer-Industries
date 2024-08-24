@@ -111,6 +111,13 @@ nav a:hover {
     border-radius: 20px;
     margin-left: -5px;
 }
+.grid-item video {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid rgba(0, 0, 0, 0.212); 
+    border-radius: 20px;
+    margin-left: -3px;
+}
 
 .project-list {
     display: grid;
